@@ -10,7 +10,7 @@ Project -1(Healthcare) : Kidney Stone prediction -- Dataset link : https://www.k
                                    5)Model Building (Scaled The data(StandardScaler- which used zscore to scale) , Applied PCA which didnt give the expected outcome,
                                    Used imp. ML models including Decision Tree, Logistic Regression, RandomForestCalssifier, XGBClassifier,SVC,KNN & GNB.
                                    6)Model Training and Checking the accuracy on the Validation Data .
-                                   7)Building Pipelines for scalable models including all changes made to the Data.(Using sklearn pipeline)</pre>
+                                   7)Building Pipelines for scalable models including all changes made to the Data.(Using sklearn pipeline)
 
 Project -2(Science Fiction): Spaceship Titanic Survivors Prediction -- Dataset link : https://www.kaggle.com/competitions/spaceship-titanic/data
-                Applied Concepts : 1)
+                Applied Concepts : 1)</pre>
