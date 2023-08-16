@@ -24,11 +24,11 @@ Project -2(Science Fiction): Spaceship Titanic Survivors Prediction -- Dataset l
                                    9)Importing Pipeline and Predicting on Test data.
 
 Project -3(Real Estate): House Price Prediction -- Dataset link : https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
-                                  1)Feature Engineering
-                                  2)Data Preprocessing(Handling Null values, Handling duplicates, Encoding Features, Mapping Features, Multicollinearity handling)
-                                  3)EDA(Boxplots, Violinplots, Countplot, Lineplots, histograps, Heatmaps )
+                                  1)Feature Engineering(Created some features using logic )
+                                  2)Data Preprocessing(Handling Null values, Handling duplicates, Encoding Features, Mapping Features, Multicollinearity handling, Feature Selection, Outlier handling since skewed data)
+                                  3)EDA(Boxplots, Violinplots, Countplot, Lineplots, histograms, Heatmaps, Pieplots)
                                   4)Train-test-split(Using the best split acheived by Stratified KFold for training the model for better accuracy)
-                                  5)Model Building(Scaled the data using StandardScaler(), used Gradient Boosting,RandomForest and XGBoost Regressor's )
+                                  5)Model Building(Scaled the data using StandardScaler(), used Gradient Boosting,RandomForest and XGBoost Regressors )
                                   6)Model Training and Evaluation( Mean Absolute Error and r2score for evaluation )
                                   7)Creating Preprocessor Pipeline and Model Pipeline
                                   8)Saving and Importing the pipelines.
