@@ -21,7 +21,7 @@ Project -2(Science Fiction): Spaceship Titanic Survivors Prediction -- Dataset l
                                    6)Model Training and Evaluation
                                    7)Creating Preprocessor Pipeline and Model Pipeline
                                    8)Saving and Importing the pipelines.
-                                   9)Importing Pipeline and Predicting on Test data.</pre>
+                                   9)Importing Pipeline and Predicting on Test data.
 
 Project -3(Real Estate): House Price Prediction -- Dataset link : https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
                                   1)Feature Engineering
