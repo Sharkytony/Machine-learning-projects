@@ -32,4 +32,24 @@ Project -3(Real Estate): House Price Prediction -- Dataset link : https://www.ka
                                   6)Model Training and Evaluation( Mean Absolute Error and r2score for evaluation )
                                   7)Creating Preprocessor Pipeline and Model Pipeline
                                   8)Saving and Importing the pipelines.
-                                  9)Importing Pipeline and Predicting on Test data.</pre>
+                                  9)Importing Pipeline and Predicting on Test data.
+
+Project -4(EDA):State growth insights and recommendation -- Dataset link : https://codebasics.io/challenge/codebasics-resume-project-challenge
+                                  1)Finding important Answers which would result in the growth 
+                                  2)EDA(matplotlib, seaborn, plotly - barplots, histograms, distplots)
+                                  3)Insights and Reccomendations
+
+Project -5(Customer Segmentation): Credit card cluster segmentation and future cluster prediction 
+                                  1)Data cleaning and Preprocessing(handling duplicate records, missing data, constant columns, log transformation, outlier handling (percentile-based outlier detection), capping, dropping multicollinearity columns.
+                                  2)EDA(histplot, heatmap, displot, kde, lineplot, scatterplot, countplot, dendogram) visualizing distribution type and other factors.
+                                  3)Optimal Cluster Number, Clustering Model(Scaled using StandardScaler(), Dimensionality reduction using PCA(), Clustering by KMeans, and Agglomerative clustering  could also use DBSCAN but as the data is too much densed it wont work).
+                                  4)Splitting the Data(Stratified Kfold, Train-Test-Split) 
+                                  5)Classification Model Building(Scaled the data using StandardScaler(), using SVC and Logistric Regression)
+                                  6)Training and Evaluating Model(accuracy score, confusion metrics)
+                                  7)Creating Preprocessor Pipelines for Clustering and Classification and Model Pipelines for Clustering and Classification.
+                                  8)Saving and Importing the pipelines.
+                                  9)Importing test data and Predicting on Test data
+</pre>
+
+
+                            
