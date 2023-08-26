@@ -1,5 +1,5 @@
 # Machine-learning-projects
-Supervised + Unsupervised(Classification,Regression, Clustering, Dimensionality Reduction,Feature Engineering, EDA, Data preprocessing)
+Supervised + Unsupervised(Classification,Regression, Clustering, Dimensionality Reduction,Feature Engineering, EDA, Data preprocessing, Pipelines)
 <pre>
 Project -1(Healthcare) : Kidney Stone prediction -- Dataset link : https://www.kaggle.com/competitions/playground-series-s3e12/data
                 Applied Concepts : 1)Feature Engineering(Creating new features form existing ones).
