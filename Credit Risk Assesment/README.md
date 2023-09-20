@@ -1,45 +1,103 @@
-<pre><h1>Project : Credit Risk Assement
-Author : Anthony Rodrigues </h1>
+<pre><b><h1>
+Project : Credit Risk Assessment
+Author: Anthony Rodrigues</h1>
+<h2>
+Section 1: Data Preparation and Exploration
+</h2>
 
-1) Data Ingestion, Importing Libraries & Data Exploration - Importing Data, Preprocessing libraries, Statistical libraries,
-Visualization libraries, EDA Tool, ML MODELS, Hyperparameter Tuning libraries, Models evauluation metric libraries, 
-Pipeline libraries, Exploring Statistics of the Data(mean, median, std, variance).
+<h3>
+1.1 Data Ingestion and Library Setup
+</h3>
+Importing Data
+Preprocessing Libraries
+Statistical Libraries
+Visualization Libraries
+<h3>
+1.2 Exploratory Data Analysis (EDA)
+</h3>
+EDA Tool
+Statistical Data Overview
+Mean, Median, Standard Deviation, Variance
+Data Visualization
+Histograms
+Correlation Matrix Heatmap
+Parallel Plot
+Pairplot
+<h2>
+Section 2: Data Cleaning and Preprocessing
+</h2>
+<h3>
+2.1 Handling Data Quality Issues
+</h3>
+Duplicate Handling
+Handling Constant Columns
+Handling Missing Values (Pandas-Profiling)
+<h3>
+2.2 Data Transformation
+</h3>
+One-Hot Encoding for Cardinal Features
+Label Encoding for Ordinal Features
+Merging Dataframes
+<h3>
+2.3 Outlier Detection and Treatment
+</h3>
+Identifying Gaussian and Skewed Distributions
+Outlier Detection using IQR and Percentile Methods
+Trimming and Capping Outliers
+<h3>
+2.4 Data Balancing
+</h3>
+Downsampling Majority Class
+Upsampling Minority Class
+Merging Balanced Data
+Feature Scaling using StandardScaler
+Dimensionality Reduction
+<h2>
+Section 3: Model Development
+</h2>
+<h3>
+3.1 Data Splitting and Cross-Validation
+</h3>
+Stratified K-Fold Cross-Validation
+Train-Test Split
+<h3>
+3.2 Model Selection and Training
+</h3>
+Boosting Models
+Bayesian Models
+K-Nearest Neighbors (KNN)
+Logistic Regression
+Fitting and Training Models
+<h3>
+3.3 Hyperparameter Tuning
+</h3>
+Pruning Decision Trees
+Visualizing Pruning
+Model Tuning (GridSearchCV)
+<h3>
+3.4 Model Evaluation
+</h3>
+Plotting Evaluation Scores
+<h3>
+3.5 Ensemble Models
+</h3>
+Stacking Classifier
+Voting Classifier
+  <h2>
+Section 4: Pipeline Creation
+</h2><h3>
+4.1 Preprocessing Pipeline
+</h3>
+Preprocessor Functions (preprocessor.py)
+Training Preprocessor Pipeline (train_preprocessor.pkl)
 
-2)Data Cleaning with EDA - Handling Duplicates, Constant Columns Missing values under the guidance of Pandas-Profiling,
-HeatMap of Correlation Matrix and Histograms showing the variance of the data and the mean, median and mode points in it. 
-Exploring if the classes are not stacked together. Parallel Plot for exploring and analysing the data. One Hot Encoding 
-features with cardinal values and Label encoding features with ordinal values and merging the dataframes. Using Pairplot to 
-see the distribution of each feature. 
+  <h3>4.2 Testing Pipeline
+</h3>
+Testing Preprocessor Functions (test_preprocessor.py)
+Testing Preprocessor Pipeline (test_preprocessor.pkl)
 
-3)Statistical Processing - Differenciating features into Guassian Distribution and Skewed Distribution columns . As all 
-features follow Normal distribution Applying IQR outlier detection and Percentile method for detecting outliers. Plotting 
-the distribution of continous columns with lower and upper bounds. Applying Trimming and Capping on the data .
-
-4)Data Cleaning and Preprocessing (2) - Downsampling Majority class to minority class length, Upsampling minority class to 
-twice its length and merging the data. Seperating dependent and independent variables. Scaling independent variables using
-StandardScaler and Applying Dimensionality Reduction .
-
-5)Cross-validation and Train-test-split - Using Stratified KFold for cross validation, along with scikit-learn's train
-  test split 
-
-6)Model Building, Training and Evaluating - Initializing boosting, Bayes derived, KNN and Logistic regression model, Fitting
-and Training models on processed data saving the results and plotting them.
-
-7)Hyperparameter tuning - Prunning decision tree and obtaining best params Visualizing prunning (for EDA) Tuning the models
-with GridSearchCV(couldnt keep in the code as took too long thus didnt include).
-
-8)Cross Validation , Train-test-split, Model Building, Training and Evaluation (2) - Training tuned models with same Cross
-Validation and Split method and plotting the evalation score.
-
-9)Model Building, Training and Evaluating (3) - Using the Best Models in a Stacking CLassifier and Voting Classifier storing
-the results and plotting them.
-
-10)Building Pipelines - Creating python file with all functions of preprocessing (<a href="https://github.com/Sharkytony/Machine-learning-projects/blob/main/Credit%20Risk%20Assesment/preprocessor.py" target="_blank">preprocessor.py</a>).
-Importing the functions Building a pipeline using them as training preprocessor(<a href="https://github.com/Sharkytony/Machine-learning-projects/blob/main/Credit%20Risk%20Assesment/train_preprocessor.pkl">train_preprocessor.pkl</a>) 
-including all the steps used for processing training data, creating a python file of testing preprocessing functions 
-(<a href="https://github.com/Sharkytony/Machine-learning projects/blob/main/Credit%20Risk%20Assesment/test_preprocessor.py">test_preprocessor.py</a>)with minor changes in the training functions and appending in a pipeline (<a href="https://github.com/Sharkytony/Machine-learning-projects/blob/main/Credit%20Risk%20Assesment/test_preprocessor.pkl">test_preprocessor.pkl</a>) Building Model and appending
-in a pipeline<a href="https://github.com/Sharkytony/Machine-learning-projects/blob/main/Credit%20Risk%20Assesment/model.pkl">model.pkl</a> applying all the pipelines fitting, training, evaluating and storing them.
-
-
-  
+  <h3>4.3 Model Pipeline
+</h3>
+Building and Saving Model Pipeline (model.pkl)
+Applying Pipelines for Fitting, Training, and Evaluation
 
