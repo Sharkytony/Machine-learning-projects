@@ -15,7 +15,7 @@ Project -1(Healthcare) : Kidney Stone prediction -- Dataset link : https://www.k
 Project -2(Science Fiction): Spaceship Titanic Survivors Prediction -- Dataset link : https://www.kaggle.com/competitions/spaceship-titanic/data
                 Applied Concepts : 1)Feature Engineering
                                    2)Data preprocessing(Handling Null values, Handling duplicates, Encoding Features)
-                                   3)EDA(Discrete columns from continous and discrete features mapping into smaller groups , Histograms, Pairplot, Countplots,                                           Heatmaps )
+                                   3)EDA(Discrete columns from continous and discrete features mapping into smaller groups , Histograms, Pairplot, Countplots,Heatmaps )
                                    4)Train-test-split(Using the best split acheived by Stratified KFold for training the model for better accuracy)
                                    5)Model Building(Scaled the data using StandardScaler(), used VotingClassifier and Stacking Classifier )
                                    6)Model Training and Evaluation
@@ -25,7 +25,8 @@ Project -2(Science Fiction): Spaceship Titanic Survivors Prediction -- Dataset l
 
 Project -3(Real Estate): House Price Prediction -- Dataset link : https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
               Applied Concepts :  1)Feature Engineering(Created some features using logic )
-                                  2)Data Preprocessing(Handling Null values, Handling duplicates, Encoding Features, Mapping Features, Multicollinearity handling, Feature Selection, Outlier handling since skewed data)
+                                  2)Data Preprocessing(Handling Null values, Handling duplicates, Encoding Features, Mapping Features, Multicollinearity handling,
+  Feature Selection, Outlier handling since skewed data)
                                   3)EDA(Boxplots, Violinplots, Countplot, Lineplots, histograms, Heatmaps, Pieplots)
                                   4)Train-test-split(Using the best split acheived by Stratified KFold for training the model for better accuracy)
                                   5)Model Building(Scaled the data using StandardScaler(), used Gradient Boosting,RandomForest and XGBoost Regressors )
@@ -42,7 +43,8 @@ Project -4(EDA):State growth insights and recommendation -- Dataset link : https
 Project -5(Customer Segmentation): Credit card cluster segmentation and future cluster prediction 
               Applied Concepts :  1)Data cleaning and Preprocessing(handling duplicate records, missing data, constant columns, log transformation, outlier handling (percentile-based outlier detection), capping, dropping multicollinearity columns.
                                   2)EDA(histplot, heatmap, displot, kde, lineplot, scatterplot, countplot, dendogram) visualizing distribution type and other factors.
-                                  3)Optimal Cluster Number, Clustering Model(Scaled using StandardScaler(), Dimensionality reduction using PCA(), Clustering by KMeans, and Agglomerative clustering  could also use DBSCAN but as the data is too much densed it wont work).
+                                  3)Optimal Cluster Number, Clustering Model(Scaled using StandardScaler(), Dimensionality reduction using PCA(), Clustering by KMeans,
+  and Agglomerative clustering  could also use DBSCAN but as the data is too much densed it wont work).
                                   4)Splitting the Data(Stratified Kfold, Train-Test-Split) 
                                   5)Classification Model Building(Scaled the data using StandardScaler(), using SVC and Logistric Regression)
                                   6)Training and Evaluating Model(accuracy score, confusion metrics)
