@@ -26,7 +26,7 @@ Project -2(Science Fiction): Spaceship Titanic Survivors Prediction -- Dataset l
 Project -3(Real Estate): House Price Prediction -- Dataset link : https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
               Applied Concepts :  1)Feature Engineering(Created some features using logic )
                                   2)Data Preprocessing(Handling Null values, Handling duplicates, Encoding Features, Mapping Features, Multicollinearity handling,
-  Feature Selection, Outlier handling since skewed data)
+                                  Feature Selection, Outlier handling since skewed data)
                                   3)EDA(Boxplots, Violinplots, Countplot, Lineplots, histograms, Heatmaps, Pieplots)
                                   4)Train-test-split(Using the best split acheived by Stratified KFold for training the model for better accuracy)
                                   5)Model Building(Scaled the data using StandardScaler(), used Gradient Boosting,RandomForest and XGBoost Regressors )
@@ -41,10 +41,11 @@ Project -4(EDA):State growth insights and recommendation -- Dataset link : https
                                   3)Insights and Reccomendations
 
 Project -5(Customer Segmentation): Credit card cluster segmentation and future cluster prediction 
-              Applied Concepts :  1)Data cleaning and Preprocessing(handling duplicate records, missing data, constant columns, log transformation, outlier handling (percentile-based outlier detection), capping, dropping multicollinearity columns.
+              Applied Concepts :  1)Data cleaning and Preprocessing(handling duplicate records, missing data, constant columns, log transformation, outlier handling
+                                  (percentile-based outlier detection), capping, dropping multicollinearity columns.
                                   2)EDA(histplot, heatmap, displot, kde, lineplot, scatterplot, countplot, dendogram) visualizing distribution type and other factors.
                                   3)Optimal Cluster Number, Clustering Model(Scaled using StandardScaler(), Dimensionality reduction using PCA(), Clustering by KMeans,
-  and Agglomerative clustering  could also use DBSCAN but as the data is too much densed it wont work).
+                                  and Agglomerative clustering  could also use DBSCAN but as the data is too much densed it wont work).
                                   4)Splitting the Data(Stratified Kfold, Train-Test-Split) 
                                   5)Classification Model Building(Scaled the data using StandardScaler(), using SVC and Logistric Regression)
                                   6)Training and Evaluating Model(accuracy score, confusion metrics)
@@ -60,10 +61,11 @@ Project -6(Fintech) :Credit Risk Assesment
                                  4) Data Preprocessing - One Hot Encoding, Label Encoding, Outlier Handling, Handling Multicollinearity, DownSampling and UpSampling, Scaling
                                  5) Cross Validation & Train-Test-Split - Stratified KFold for acheiving best split 
                                  6) Model Training & Evaluating - Applying Scikit-learn's models (XGBoost, DecisionTree, LightGBM, GradientBoosting, RandomForest)
-                                 7) Hyperparam Tuning, Model Training & Evaluating - Pruning on Decision Tree (Cutting Overfitting branches), Extracting Optimal Alpha number
-for tuning Decision Tree, Tuning XGBoost, GradientBoosting, RandomForest (Boosting Algorithms).
+                                 7) Hyperparam Tuning, Model Training & Evaluating - Pruning on Decision Tree (Cutting Overfitting branches), Extracting Optimal Alpha
+                                  number for tuning Decision Tree, Tuning XGBoost, GradientBoosting, RandomForest (Boosting Algorithms).
                                  8) Pipeline - building training preprocessor pipeline, testing preprocessor pipeline, model pipeline
-                                 9) Saving and Importing Pipelines  - Importing raw data, applying pipelines, fitting model, evaluating model on validation data, saving pipeline.
+                                 9) Saving and Importing Pipelines  - Importing raw data, applying pipelines, fitting model, evaluating model on validation data, 
+                                  saving pipeline.
                                 10) Training and Evaluation Pipeline - Importing Pipeline and predicting on Test data.
 </pre>
 
