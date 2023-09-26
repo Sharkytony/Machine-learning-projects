@@ -1,4 +1,4 @@
-<h1>Project Documentation: Credit Risk Assessment
+<h1>Project Documentation: Credit Risk Assessment<br>
 Author: Anthony Rodrigues</h1>
 
 <h2>Section 1: Data Preparation and Exploration</h2>
