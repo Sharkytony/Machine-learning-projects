@@ -8,7 +8,7 @@ with open('dw_encoder.pkl', 'rb')as file:
     dw_encoder = pickle.load(file)
 
 with open('gbt_encoder.pkl', 'rb')as file:
-    gbt_encoder = pickle.load(file)
+    gbt_encoder = pickle.load(file) 
 
 with open('fuel_encoder.pkl', 'rb')as file:
     fuel_encoder = pickle.load(file)
