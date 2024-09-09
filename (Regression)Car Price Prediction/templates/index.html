@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('{{ url_for("static", filename="sell_save.png") }}');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-color: #555555;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            max-width: 800px;
+            margin: 175px auto 50px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: x-large;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            border: 3px solid #ccc;
+            border-radius: 3px;
+            font-size: 18px;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: #fff;
+            width: 200px; 
+            height: 60px; 
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            margin-top: 50px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form name="input-list" action="/preds" method="post">
+            <form name="input-list" action="/preds" method="post">
+                <div class="input-group">
+                    <label for="id">ID (Optional)</label><br>
+                    <input type="text" id="id" name="id">
+                </div>
+                <div class="input-group">
+                    <label for="levy">Levy</label><br>
+                    <input type="text" id="levy" name="levy" required>
+                </div>
+                <div class="input-group">
+                    <label for="manufacturer">Manufacturer</label><br>
+                    <input type="text" id="manufacturer" name="manufacturer" required>
+                </div>
+                <div class="input-group">
+                    <label for="model">Model (Optional)</label><br>
+                    <input type="text" id="model" name="model">
+                </div>
+                <div class="input-group">
+                    <label for="year">Production year</label><br>
+                    <input type="text" id="year" name="year" required>
+                </div>
+                <div class="input-group">
+                    <label for="category">Category</label><br>
+                    <input type="text" id="category" name="category" required>
+                </div>    
+                <div class="input-group">
+                    <label for="lint">Leather interior</label><br>
+                    <input type="text" id="lint" name="lint" required>
+                </div>    
+                <div class="input-group">
+                    <label for="fuel">Fuel type</label><br>
+                    <input type="text" id="fuel" name="fuel" required>
+                </div>    
+                <div class="input-group">
+                    <label for="engvol">Engine volume</label><br>
+                    <input type="text" id="engvol" name="engvol" required>
+                </div>    
+                <div class="input-group">
+                    <label for="mileage">Mileage(km Full tank)</label><br>
+                    <input type="text" id="mileage" name="mileage" required>
+                </div>    
+                <div class="input-group">
+                    <label for="cylinders">Cylinders</label><br>
+                    <input type="text" id="cylinders" name="cylinders" required>
+                </div>    
+                <div class="input-group">
+                    <label for="gbt">Gear box type</label><br>
+                    <input type="text" id="gbt" name="gbt" required>
+                </div>    
+                <div class="input-group">
+                    <label for="dw">Drive wheels</label><br>
+                    <input type="text" id="dw" name="dw" required>
+                </div>    
+                <div class="input-group">
+                    <label for="doors">Doors (Optional)</label><br>
+                    <input type="text" id="doors" name="doors">
+                </div>    
+                <div class="input-group">
+                    <label for="wheel">Wheel</label><br>
+                    <input type="text" id="wheel" name="wheel" required>
+                </div>    
+                <div class="input-group">
+                    <label for="color">Color</label><br>
+                    <input type="text" id="color" name="color" required>
+                    sel
+                </div>    
+                <div class="input-group">
+                    <center>
+                    <button class="btn" type="submit">Predict</button>
+                    </center>
+                </div>
+            </form>
+        </div>
+        <footer class="footer">
+            <h2>Connect with Developer </h2><br>
+            <a href="https://www.linkedin.com/in/anthonyrodrigues443/" target="_blank"><img src='{{ url_for("static", filename="linkedin logo.png") }}' width="75px"></a>
+        </footer>
+    </body>
+    </html>
+    
