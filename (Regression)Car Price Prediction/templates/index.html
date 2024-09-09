@@ -32,6 +32,13 @@
             margin-bottom: 5px;
             font-size: x-large;
         }
+        select{
+            width: 400px;
+            padding: 10px;
+            /* border: 3px solid #ccc; */
+            border-radius: 3px;
+            font-size: 18px;
+        }
         input[type="text"] {
             width: 90%;
             padding: 10px;
@@ -110,29 +117,67 @@
                 </div>    
                 <div class="input-group">
                     <label for="cylinders">Cylinders</label><br>
-                    <input type="text" id="cylinders" name="cylinders" required>
+                    <select id="color" name="color" required style="width: 93%;  font-size: 18px;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                    </select>
                 </div>    
                 <div class="input-group">
                     <label for="gbt">Gear box type</label><br>
-                    <input type="text" id="gbt" name="gbt" required>
+                    <select id="color" name="color" required style="width: 93%;  font-size: 18px;">
+                        <option value="Automatic">Automatic</option>
+                        <option value="Manual">Manual</option>
+                        <option value="Variator">Variator</option>
+                        <option value="Tiptronic">Tiptronic</option>
+                    </select>
                 </div>    
                 <div class="input-group">
                     <label for="dw">Drive wheels</label><br>
-                    <input type="text" id="dw" name="dw" required>
+                    <select id="color" name="color" required style="width: 93%;  font-size: 18px;">
+                        <option value="Front">Front</option>
+                        <option value="Rear">Rear</option>
+                        <option value="4x4">4x4</option>
+                    </select>
                 </div>    
                 <div class="input-group">
                     <label for="doors">Doors (Optional)</label><br>
-                    <input type="text" id="doors" name="doors">
-                </div>    
+                    <select id="color" name="color" required style="width: 93%;  font-size: 18px;">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="5+">5+</option>
+                    </select>
+                    </div>    
                 <div class="input-group">
                     <label for="wheel">Wheel</label><br>
-                    <input type="text" id="wheel" name="wheel" required>
+                    <select id="color" name="color" required style="width: 93%;  font-size: 18px;">
+                    <option value="right">Right hand drive</option>
+                    <option value="left">Left hand drive</option>
+                </select>
                 </div>    
                 <div class="input-group">
                     <label for="color">Color</label><br>
-                    <input type="text" id="color" name="color" required>
-                    sel
-                </div>    
+                    <select id="color" name="color" required style="width: 93%;  font-size: 18px;">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Grey">Grey</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                        <option value="Brown">Brown</option>
+                        <option value="Other">Other</option>
+                        </select>
+                    </div>    
                 <div class="input-group">
                     <center>
                     <button class="btn" type="submit">Predict</button>
