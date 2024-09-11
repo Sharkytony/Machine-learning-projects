@@ -1,0 +1,31 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Best Price for your Car
+    </title>
+</head>
+<body>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+</head>
+<body>
+    <h1>Car Price Prediction Result</h1>
+    
+    {% if predicted_price %}
+        <p>The predicted price for the car is: ${{ predicted_price }}</p>
+    {% else %}
+        <p>No prediction available. Please submit the form to get a prediction.</p>
+    {% endif %}
+    
+    <a href="/">Back to input form</a>
+</body>
+</html>
