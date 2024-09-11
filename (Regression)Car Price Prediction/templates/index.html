@@ -76,48 +76,80 @@
         <form name="input-list" action="/preds" method="post">
             <form name="input-list" action="/preds" method="post">
                 <div class="input-group">
-                    <label for="id">ID (Optional)</label><br>
-                    <input type="text" id="id" name="id">
+                    <label for="ID">ID (Optional)</label><br>
+                    <input type="text" id="ID" name="ID" placeholder="For companies if they are going to save the data ">
                 </div>
                 <div class="input-group">
-                    <label for="levy">Levy</label><br>
-                    <input type="text" id="levy" name="levy" required>
+                    <label for="Levy">Levy</label><br>
+                    <input type="text" id="Levy" name="Levy" required placeholder="Annual fee/tax imposed on the vehicle by the government">
                 </div>
                 <div class="input-group">
-                    <label for="manufacturer">Manufacturer</label><br>
-                    <input type="text" id="manufacturer" name="manufacturer" required>
+                    <label for="Manufacturer">Manufacturer</label><br>
+                    <input type="text" id="Manufacturer" name="Manufacturer" required placeholder="Manufacturing brand of the vehicle">
                 </div>
                 <div class="input-group">
-                    <label for="model">Model (Optional)</label><br>
-                    <input type="text" id="model" name="model">
+                    <label for="Model">Model (Optional)</label><br>
+                    <input type="text" id="Model" name="Model" placeholder="Model name of the vehicle">
                 </div>
                 <div class="input-group">
-                    <label for="year">Production year</label><br>
-                    <input type="text" id="year" name="year" required>
+                    <label for="Prod. year">Production year</label><br>
+                    <input type="text" id="Prod. year" name="Prod. year" required placeholder="Year of manufacturing">
                 </div>
                 <div class="input-group">
-                    <label for="category">Category</label><br>
-                    <input type="text" id="category" name="category" required>
+                    <label for="Category">Category</label><br>
+                    <select id="Category" name="Category" required style="width: 93%;  font-size: 18px;">
+                        <option value="Jeep">Jeep</option>
+                        <option value="Hatchback">Hatchback</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="Microbus">Microbus</option>
+                        <option value="Microbus">Goods wagon</option>
+                        <option value="Hatchback">Coupe</option>
+                        <option value="Hatchback">Minivan</option>
+                        <option value="Hatchback">Cabriolet</option>
+                        <option value="Hatchback">Limousine</option>
+                        <option value="Hatchback">Pickup</option>
+                        <option value="Hatchback">Other</option>
+                    </select>
+
                 </div>    
                 <div class="input-group">
-                    <label for="lint">Leather interior</label><br>
-                    <input type="text" id="lint" name="lint" required>
+                    <label for="Leather interior">Leather interior</label><br>
+                    <select id="Leather interior" name="Leather interior" required style="width: 93%;  font-size: 18px;">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
                 </div>    
                 <div class="input-group">
-                    <label for="fuel">Fuel type</label><br>
-                    <input type="text" id="fuel" name="fuel" required>
+                    <label for="Fuel type">Fuel type</label><br>
+                    <select id="Fuel type" name="Fuel type" required style="width: 93%;  font-size: 18px;">
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Hydrogen">Hydrogen</option>
+                        <option value="Hybrid">Hybrid</option>
+                        <option value="Plug-in Hybrid">Plug-in Hybrid</option>
+                        <option value="LPG">LPG</option>
+                        <option value="CNG">CNG</option>
+                    </select>
                 </div>    
                 <div class="input-group">
-                    <label for="engvol">Engine volume</label><br>
-                    <input type="text" id="engvol" name="engvol" required>
+                    <label for="Engine volume">Engine volume</label><br>
+                    <input type="text" id="Engine volume" name="Engine volume" required>
+                </div>                    
+                <div class="input-group">
+                    <label for="Turbo">Turbo</label><br>
+                    <select id="Turbo" name="Turbo" required style="width: 93%;  font-size: 18px;">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                </div>    
+
+                <div class="input-group">
+                    <label for="Mileage">Full tank range</label><br>
+                    <input type="text" id="Mileage" name="Mileage" required placeholder="Distance covered in one full tank (in km's)">
                 </div>    
                 <div class="input-group">
-                    <label for="mileage">Mileage(km Full tank)</label><br>
-                    <input type="text" id="mileage" name="mileage" required>
-                </div>    
-                <div class="input-group">
-                    <label for="cylinders">Cylinders</label><br>
-                    <select id="color" name="color" required style="width: 93%;  font-size: 18px;">
+                    <label for="Cylinders">Cylinders</label><br>
+                    <select id="Cylinders" name="Cylinders" required style="width: 93%;  font-size: 18px;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -133,8 +165,8 @@
                     </select>
                 </div>    
                 <div class="input-group">
-                    <label for="gbt">Gear box type</label><br>
-                    <select id="color" name="color" required style="width: 93%;  font-size: 18px;">
+                    <label for="Gear box type">Gear box type</label><br>
+                    <select id="Gear box type" name="Gear box type" required style="width: 93%;  font-size: 18px;">
                         <option value="Automatic">Automatic</option>
                         <option value="Manual">Manual</option>
                         <option value="Variator">Variator</option>
@@ -142,31 +174,31 @@
                     </select>
                 </div>    
                 <div class="input-group">
-                    <label for="dw">Drive wheels</label><br>
-                    <select id="color" name="color" required style="width: 93%;  font-size: 18px;">
+                    <label for="Drive wheels">Drive wheels</label><br>
+                    <select id="Drive wheels" name="Drive wheels" required style="width: 93%;  font-size: 18px;">
                         <option value="Front">Front</option>
                         <option value="Rear">Rear</option>
                         <option value="4x4">4x4</option>
                     </select>
                 </div>    
                 <div class="input-group">
-                    <label for="doors">Doors (Optional)</label><br>
-                    <select id="color" name="color" required style="width: 93%;  font-size: 18px;">
+                    <label for="Doors">Doors (Optional)</label><br>
+                    <select id="Doors" name="Doors" required style="width: 93%;  font-size: 18px;">
                         <option value="2">2</option>
                         <option value="4">4</option>
                         <option value="5+">5+</option>
                     </select>
                     </div>    
                 <div class="input-group">
-                    <label for="wheel">Wheel</label><br>
-                    <select id="color" name="color" required style="width: 93%;  font-size: 18px;">
+                    <label for="Wheel">Wheel</label><br>
+                    <select id="Wheel" name="Wheel" required style="width: 93%;  font-size: 18px;">
                     <option value="right">Right hand drive</option>
                     <option value="left">Left hand drive</option>
                 </select>
                 </div>    
                 <div class="input-group">
-                    <label for="color">Color</label><br>
-                    <select id="color" name="color" required style="width: 93%;  font-size: 18px;">
+                    <label for="Color">Colour</label><br>
+                    <select id="Color" name="Color" required style="width: 93%;  font-size: 18px;">
                         <option value="Black">Black</option>
                         <option value="White">White</option>
                         <option value="Silver">Silver</option>
@@ -178,6 +210,27 @@
                         <option value="Other">Other</option>
                         </select>
                     </div>    
+                    <div class="input-group">
+                        <label for="Airbags">Airbags</label><br>
+                        <select id="Airbags" name="Airbags" required style="width: 93%;  font-size: 18px;">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            </select>
+                        </div>        
                 <div class="input-group">
                     <center>
                     <button class="btn" type="submit">Predict</button>
