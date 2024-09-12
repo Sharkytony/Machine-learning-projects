@@ -176,6 +176,7 @@ def clean_Manufacturer(df):
 
 def clean_ProdYr(df):
     def calc_age(year):
+        year = int(year)
         age = 2024 - year
         return age
     df['Car_Age'] = df['Prod. year'].apply(calc_age)
