@@ -157,12 +157,16 @@ def clean_Category(df):
     return df
 
 def clean_Manufacturer(df):
+    def lowercase(row_val):
+        return row_val.lower().strip()
+    df['Manufacturer'] = df['Manufacturer'].apply(lowercase)
+
     man_uni = ['lexus', 'chevrolet', 'honda', 'ford', 'hyundai', 'toyota', 'mercedes-benz', 'opel', 'porsche', 'bmw', 'jeep', 'volkswagen', 'audi', 'renault','nissan', 'subaru', 'daewoo', 'kia', 'mitsubishi', 'ssangyong', 'mazda', 'gmc','fiat', 'infiniti', 'alfa romeo', 'suzuki', 'acura', 'lincoln', 'vaz', 'gaz','citroen', 'land rover', 'mini', 'dodge', 'chrysler', 'jaguar', 'isuzu', 'skoda','daihatsu', 'buick', 'tesla', 'cadillac', 'peugeot', 'bentley', 'volvo', 'სხვა','haval', 'hummer', 'scion', 'uaz', 'mercury', 'zaz', 'rover', 'seat', 'lancia','moskvich', 'maserati', 'ferrari', 'saab', 'lamborghini', 'rolls-royce', 'pontiac', 'saturn', 'aston martin', 'greatwall']
 
     others = ['bmw', 'nissan', 'lexus', 'volkswagen', 'ssangyong', 'kia', 'subaru', 'audi', 'mitsubishi', 'opel', 'mazda', 'daewoo', 'jeep', 'fiat', 'suzuki', 'mini', 'dodge', 'land rover', 'renault', 'jaguar', 'skoda', 'chrysler', 'porsche', 'peugeot', 'buick', 'vaz', 'infiniti', 'volvo', 'acura', 'citroen', 'gmc', 'scion', 'lincoln', 'cadillac', 'alfa romeo', 'mercury', 'daihatsu', 'maserati', 'gaz', 'saab', 'seat', 'other', 'lancia', 'haval', 'hummer', 'pontiac', 'saturn', 'greatwall']
 
     man_map = dict()
-
+    
     for val in df['Manufacturer']:
         if val not in man_uni :
             man_map[val] = 'other'
