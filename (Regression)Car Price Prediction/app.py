@@ -46,8 +46,7 @@ def prediction():
     input_processed_df = pipeline.entire_pipeline(input_df, man_encoder, cat_encoder,fuel_encoder, gbt_encoder, dw_encoder,color_encoder, scaler)
 
     pred_price = loaded_model.predict(input_processed_df)
-
-    return render_template('predictions.html', predicted_price=pred_price)
+    return render_template('predictions.html', predicted_price=round(pred_price[0]))
 
 if __name__ == '__main__':
     app.run(debug=True)
