@@ -26,7 +26,6 @@ def create_df(id, levy, man, mod, yr, cat, leather, fuel, eng, mil, cy, gear, dw
 
 def check_df(df):
     sum = 0
-    null = False
     cols = ['ID', 'Levy', 'Manufacturer', 'Model', 'Prod. year','Category', 'Leather interior', 'Fuel type', 'Engine volume', 'Mileage','Cylinders',
     'Gear box type', 'Drive wheels', 'Doors', 'Wheel', 'Color','Airbags']
 
@@ -37,7 +36,6 @@ def check_df(df):
             if col1 == col2:
                 sum +=1
                 if col1 not in allowed_null and df[col1].isnull().sum() > 0 :
-                    null = True
                     return f'Missing important data in "{col1}" column '
                 else :
                     df[col1] = df[col1].fillna(0)
@@ -177,24 +175,11 @@ def clean_Manufacturer(df):
     return df
 
 def clean_ProdYr(df):
-    def bucket_years(val):
-        if val in range(1900,1950):
-            return 0
-        elif val in range(1951,1960):
-            return 1
-        elif val in range(1961,1970):
-            return 2
-        elif val in range(1971,1980):
-            return 3
-        elif val in range(1981,1990):
-            return 4
-        elif val in range(1991,2000):
-            return 5
-        elif val in range(2001,2010):
-            return 6
-        else : 
-            return 7
-    df['Prod. year'] = df['Prod. year'].apply(bucket_years)
+    def calc_age(year):
+        age = 2024 - year
+        return age
+    df['Car_Age'] = df['Prod. year'].apply(calc_age)
+    df.drop(columns=['Prod. year'], inplace=True)
     return df
 
 def clean_Turbo(df):
@@ -238,7 +223,7 @@ def encoding(df, man_encoder, cat_encoder,fuel_encoder,
     return df
 
 def scaling(df,scaler):
-    scaling_cols = ['Levy', 'Prod. year', 'Mileage', 'Cylinders', 'Airbags', 'Engine Volume']
+    scaling_cols =['Levy','Mileage','Cylinders','Airbags','Engine Volume','Car_Age']
     scaled_df = pd.DataFrame(scaler.transform(df[scaling_cols]), columns=scaling_cols)
     df.drop(columns=scaling_cols, inplace=True)
     df = pd.concat([df, scaled_df], axis=1)
